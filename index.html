@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gambar Foto Jadi Anime — Roadmap 0 ke 100</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <h1>Dari foto ke anime,<br>dari nol sampai bisa.</h1>
+  <p>Fokus ke 6 skill yang memberi ±80% hasil. Sisanya menyusul belakangan.</p>
+  <div class="eta">
+    <div><b>30 hari</b><span>±1 jam/hari → potret anime yang layak dipamerkan (±80%)</span></div>
+    <div><b>3–6 bulan</b><span>±1 jam/hari → rapi, konsisten, mirip orangnya (±95%)</span></div>
+    <div><b>Bertahun-tahun</b><span>untuk "100%": gaya sendiri, anatomi, pencahayaan</span></div>
+  </div>
+</header>
+
+<main>
+<section>
+  <h2>Target visual: gambarmu di tiap tahap</h2>
+  <p>Ini contoh <i>skema</i> (bukan wajah asli). Tujuannya agar kamu tahu "hari ini hasilnya seperti apa" — kasar dulu, baru halus.</p>
+  <div class="tabs" id="tabs">
+    <button class="on" data-v="A">Foto 1 (rambut acak + jenggot tipis)</button>
+    <button data-v="B">Foto 2 (peci + baju batik)</button>
+  </div>
+  <div class="stages" id="stages"></div>
+</section>
+
+<section>
+  <h2>Bandingkan dengan fotomu</h2>
+  <p>Pilih foto dari perangkatmu. Foto hanya tampil di browser dan <b>tidak diunggah</b> ke mana pun.</p>
+  <input type="file" id="ref" accept="image/*">
+  <img id="refimg" alt="" hidden>
+</section>
+
+<section>
+  <h2>6 skill yang memberi 80% hasil</h2>
+  <div class="skills" id="skills"></div>
+</section>
+
+<section>
+  <h2>Jadwal 30 hari</h2>
+  <div class="bar"><div id="fill"></div></div>
+  <p id="pct" class="muted"></p>
+  <div id="days"></div>
+  <button id="reset" class="ghost">Reset centang</button>
+</section>
+
+<section>
+  <h2>Hari 31–90: dari bagus ke rapi</h2>
+  <ul class="plain">
+    <li>Minggu 5–6: mulai digital di Ibis Paint X: kerjakan ulang Foto 1 dengan layer (sketsa, lineart, warna, bayangan), lalu 1 potret per 2 hari.</li>
+    <li>Minggu 7–8: latihan ekspresi (senyum, kaget, melet) dan sudut kepala miring.</li>
+    <li>Minggu 9–10: shading 2 lapis + highlight + latar sederhana.</li>
+    <li>Minggu 11–13: tentukan gaya sendiri; ulangi Foto 1 &amp; 2 dan bandingkan dengan hasil hari 30.</li>
+  </ul>
+</section>
+</main>
+<footer>Kamu tidak perlu bakat. Kamu perlu 30 kali duduk menggambar.</footer>
+<script src="script.js"></script>
+</body>
+</html>
