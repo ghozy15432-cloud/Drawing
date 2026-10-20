@@ -3,45 +3,40 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gambar Foto Jadi Anime — Roadmap 0 ke 100</title>
+<title>Roadmap Gambar Anime 30 Hari</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="hero">
-  <h1>Dari foto ke anime,<br>dari nol sampai bisa.</h1>
-  <p>Target: gaya chibi seperti Ref 3 dalam 30 hari. Latihannya anime sejak hari 1, dengan salin referensi dan 6 skill inti.</p>
+  <h1>Gambar anime seperti targetmu,<br>langkah demi langkah.</h1>
+  <p>Dua target bulan 1: gadis menopang pipi di meja buku (Target A) dan gadis berbunga biru (Target B), dalam versi sederhana.</p>
   <div class="eta">
-    <div><b>30 hari</b><span>±1,5–2 jam/hari → gaya Ref 3 (chibi, warna flat) bisa ±80–90%; Ref 1 versi sederhana ±60%</span></div>
-    <div><b>6–12 bulan</b><span>untuk gaya close-up detail seperti Ref 2 (mata berkilau, rambut mengilap, render halus)</span></div>
-    <div><b>Bertahun-tahun</b><span>untuk "100%": gaya sendiri, anatomi, pencahayaan</span></div>
+    <div><b>30 hari</b><span>±2 jam/hari → versi sederhana kedua target (±50–60% polesannya)</span></div>
+    <div><b>3–6 bulan</b><span>mendekati kualitas aslinya (±80–90%)</span></div>
+    <div><b>1–2 tahun+</b><span>setara karya referensi: cahaya, tangan, dan latar yang matang</span></div>
   </div>
 </header>
-
 <main>
 <section>
-  <h2>Target visual: gambarmu di tiap tahap (gaya anime)</h2>
-  <p>Ini contoh <i>skema</i> (bukan wajah asli). Tujuannya agar kamu tahu "hari ini hasilnya seperti apa" — kasar dulu, baru halus.</p>
-  <div class="tabs" id="tabs">
-    <button class="on" data-v="A">Target bulan 1: chibi ala Ref 3</button>
-    <button data-v="B">Versi cowok (untuk fotomu)</button>
-  </div>
-  <div class="stages" id="stages"></div>
-</section>
-
-<section>
-  <h2>Bandingkan dengan fotomu atau referensi</h2>
-  <p>Pilih foto dari perangkatmu. Foto hanya tampil di browser dan <b>tidak diunggah</b> ke mana pun.</p>
+  <h2>Pelajari targetmu per tahap</h2>
+  <p>Pilih gambar targetmu dari perangkat. Gambar diproses di browser dan <b>tidak diunggah</b>. Lihat bagaimana gambar rumit dipecah menjadi grid, bentuk, value, dan garis.</p>
   <input type="file" id="ref" accept="image/*">
-  <img id="refimg" alt="" hidden>
+  <div class="tabs" id="modes">
+    <button class="on" data-m="asli">Asli</button><button data-m="grid">Grid</button><button data-m="blob">Bentuk besar</button><button data-m="value">Value</button><button data-m="line">Garis</button>
+  </div>
+  <canvas id="cv" hidden></canvas>
+  <p id="tip" class="muted">Pilih gambar dulu.</p>
 </section>
-
+<section>
+  <h2>Langkah menggambar tiap target</h2>
+  <div id="projects"></div>
+</section>
 <section>
   <h2>6 skill yang memberi 80% hasil</h2>
   <div class="skills" id="skills"></div>
 </section>
-
 <section>
   <h2>Jadwal 30 hari</h2>
   <div class="bar"><div id="fill"></div></div>
@@ -49,14 +44,12 @@
   <div id="days"></div>
   <button id="reset" class="ghost">Reset centang</button>
 </section>
-
 <section>
-  <h2>Hari 31–90: dari bagus ke rapi</h2>
+  <h2>Hari 31–90</h2>
   <ul class="plain">
-    <li>Minggu 5–6: pindah ke Ibis Paint X, kerjakan ulang Foto 1 dengan layer (sketsa, lineart, warna, bayangan).</li>
-    <li>Minggu 7–10: close-up seperti Ref 2: mata detail berlapis, rambut mengilap, tekstur bayangan.</li>
-    <li>Minggu 9–10: shading 2 lapis + highlight + latar sederhana.</li>
-    <li>Minggu 11–13: tentukan gaya sendiri; ulangi Foto 1 &amp; 2 dan bandingkan dengan hasil hari 30.</li>
+    <li>Ulangi Target A dan B dari nol dan bandingkan dengan hasil hari 30.</li>
+    <li>Gambar Foto 1 dan Foto 2 versi anime dengan teknik yang sama.</li>
+    <li>Latih tangan, pose duduk, dan latar yang lebih detail.</li>
   </ul>
 </section>
 </main>
